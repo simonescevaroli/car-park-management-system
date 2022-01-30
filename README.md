@@ -2,12 +2,12 @@
 In this project me and my collegue @elisacomposta realized an automated car park managemenet system using MSP432 and its boosterpack (Texas Instruments) , to control the number of cars entering a car park to reduce useless traffic and to avoid people wasting their time searching for a (non-existing) park.
 
 ## **WORKING SCHEME**
-Car are allowed to enter only if there are available spaces, and their access is controlled by a bar: when no more spaces are available the bar doesn’t open.
-A car is sensed when the light sensor reveals the reduction of light.
-If the park is not full (depending on a counter value also visible to the user on the LCD display) the car can enter, so the bar (controlled by a servo motor) opens, and the buzzer notifies to the user that it’s moving with an acoustic signal. There is also a visible response: when the bar is opening the LED turns to white, and when it’s completely open it becomes green.
+Car are allowed to enter only if there are available spaces, and their access is controlled by a bar: when no more spaces are available the bar doesn’t open.<br>
+A car is sensed when the light sensor reveals the reduction of light.<br>
+If the park is not full (depending on a counter value also visible to the user on the LCD display) the car can enter, so the bar (controlled by a servo motor) opens, and the buzzer notifies to the user that it’s moving with an acoustic signal. There is also a visible response: when the bar is opening the LED turns to white, and when it’s completely open it becomes green.<br>
 When the car enters (the light gets back to its nominal value) the bar closes; when it’s moving, the user is notified by the buzzer and the LED as previously explained.
-All the time the bar is closed, even when the park is full, the LED is red.
-All the phases of this system are written on the LCD screen.
+All the time the bar is closed, even when the park is full, the LED is red.<br>
+All the phases of this system are written on the LCD screen.<br>
 
 ## **SOFTWARE DESCRIPTION**
 Light sensor: we periodically sample the light value and compare it with the one that we took when the application was launched; when the difference passes a threshold, the others operations can start.
