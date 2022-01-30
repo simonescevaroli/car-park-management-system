@@ -1,5 +1,5 @@
 # CarParkManagementSystem
-In this project me and my collegue @elisacomposta realized an automated car park managemenet system using MSP432 and its boosterpack (Texas Instruments) , to control the number of cars entering a car park to reduce useless traffic and to avoid people wasting their time searching for a (non-existing) park.<br>You can test this code on Code Composer Studio (CCS).<br> Video demo: https://youtu.be/WQApLIYTIx0 <br><br>
+In this project me and my colleague @elisacomposta realized an automated car park managemenet system using MSP432 and its boosterpack (Texas Instruments) , to control the number of cars entering a car park to reduce useless traffic and to avoid people wasting their time searching for a (non-existing) park.<br>You can test this code on Code Composer Studio (CCS).<br> Video demo: https://youtu.be/WQApLIYTIx0 <br><br>
 
 ### **WORKING SCHEME**
 Car are allowed to enter only if there are available spaces, and their access is controlled by a bar: when no more spaces are available the bar doesn’t open.<br>
